@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+:root {
+--clr-primary-purple: hsl(234, 25%, 52%);
+--clr-primary-darkblue: hsl(233, 54%, 16%);
+--clr-primary-grayblue: hsl(232, 10%, 56%);
+--clr-primary-darkpink: hsl(341, 92%, 62%);
+--clr-primary-pink: hsl(341, 100%, 83%);
+--clr-primary-white: hsl(0, 0%, 100%);
+
+--clr-gradient-pinkorange:linear-gradient(to bottom, hsl(13, 100%, 64%), hsl(322, 87%, 55%));
+--clr-gradient-bluepink:linear-gradient(to bottom, hsl(237, 100%, 64%), hsl(322, 87%, 55%));
+--clr-gradient: linear-gradient(to bottom, #FFFFFF, #F0F1FF);
+}
+
+
+body {
+    background: var(--clr-gradient);
+    min-height: 100vh;
+    width: 100vw;
+    
+}
+.primary-container {
+    padding:  1rem;
+    position: relative;
+}
+
+
+.header-parent {
+    min-width: 343px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.hero-img-container {
+    overflow: hidden;
+    width: 375px; 
+   
+}
+.hero-img-container img {
+    display: block;
+    object-fit: contain;
+   
+}
+
+
+/* hero-styles */
+
+.hero-parent {
+    margin-top: 2.375rem;
+}
+.hero-text {
+    width: 343px;
+}
+.hero-text p {
+    margin-top: 1.625rem;
+}
+
+
+
+/* typogrpahy */
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--clr-primary-darkblue);
+    line-height: 50px;
+}
+h3 {
+    line-height: 25px;
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-top: 3.5rem;
+}
+.card p {
+    line-height: 26px;
+    font-size: 1rem;
+    color: var(--clr-primary-grayblue);
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+.get-started {
+    font-size: 1.125rem;
+    line-height: 28px;
+    font-weight: 700;
+    color: var(--clr-primary-darkpink);
+}
+
+.hero-text p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 26px;
+    color: var(--clr-primary-grayblue);
+}
+
+/* button styles */
+
+button {
+    border: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 24px;
+    border-radius: 30px;
+    line-height: 28px;
+    color: var(--clr-primary-white)
+}
+
+.btn-dark {
+    background-color: var(--clr-primary-darkblue);
+    
+}
+.hero-btn {
+    background: var(--clr-gradient-pinkorange);
+    line-height: 26px;
+    padding: 15px 34px;
+    margin-top: 1.5rem;
+}
+
+.btn-footer {
+    background: var(--clr-gradient-bluepink);
+}
+
+/* card styles */
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 375px;
+    gap: 2.5rem;
+}
+.card {
+    width: 343px;
+    background-color: var(--clr-primary-white);
+    border-radius: 10px;
+    padding-left: 1.75rem;
+    padding-bottom: 2rem;
+    position:relative;
+}
+
+.first-card {
+    border-radius: 10px;
+    background: var(--clr-gradient-pinkorange);
+    color: var(--clr-primary-white);
+    padding: 1.5rem;
+}
+
+.icon {
+    position: absolute;
+    bottom: 89%;
+}
+
+
+/* footer styles */
+
+footer {
+    border-radius: 5px;
+    padding: 0 1rem;
+    min-width: 375px;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+    background-color: var(--clr-primary-darkblue);
+}
+
+@media screen and (min-width: 768px){
+
+    .primary-container {
+        padding: 1.5rem 2.5rem;
+
+    }
+    .header-parent {
+        width: 689px;
+       
+    }
+    .hero-parent {
+        width: 689px;
+        margin: auto;
+        margin-top: 6.188rem;  
+    }
+    .hero-text {
+        min-width: 398px;
+
+    }
+    .hero-btn {
+        margin-bottom: 11.5rem;
+    }
+    
+    h2 {
+        margin-top: 3.5rem;
+    }
+    .hero-img-container {
+        overflow: hidden;
+        object-fit: cover;
+    }
+    .hero-img {
+        position: absolute;
+        top: -12%;
+        right:-37%;
+        z-index: -1;
+        
+    }
+  
+}
+
+@media screen and (min-width: 1000px){
+    .primary-container {
+        padding: 2.375rem 10.3rem;
+    }
+    .header-parent {
+        width: 100%;  
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        line-height: 70px;
+
+    }
+    .hero-text p {
+        font-size: 1.125rem;
+        line-height: 28px;
+    }
+    .hero-text {
+        width: 460px;
+    }
+    .hero-parent {
+        width: 100%;
+        margin-top: 10rem;  
+    }
+    .hero-img {
+        position: absolute;
+        width: 53%;
+        top: -7%;
+        left: 63%;
+        z-index: -01;
+        
+    }
+    
+    .card-container {
+        width: 1110px;
+        margin: auto;
+        
+    }
+
+}
